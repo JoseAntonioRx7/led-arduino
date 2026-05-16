@@ -1,0 +1,25 @@
+int Led_vermelho = 5;
+int Led_amarelo = 6;
+int Led_verde = 7;
+
+void setup(){
+  pinMode(Led_vermelho, OUTPUT);
+  pinMode(Led_amarelo, OUTPUT);
+  pinMode(Led_verde, OUTPUT);
+}
+
+void loop(){
+  digitalWrite(Led_vermelho, HIGH);
+  digitalWrite(Led_amarelo, LOW);
+  digitalWrite(Led_verde, LOW);
+  delay(5000);
+  digitalWrite(Led_vermelho, LOW);
+  digitalWrite(Led_amarelo, HIGH);
+  digitalWrite(Led_verde, LOW);
+  delay(5000);
+  digitalWrite(Led_vermelho, LOW);
+  digitalWrite(Led_amarelo, LOW);
+  digitalWrite(Led_verde, HIGH);
+  delay(5000);
+
+}
